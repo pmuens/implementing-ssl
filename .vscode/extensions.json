@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-vscode.cpptools",
+    "ms-vscode.hexeditor",
+    "vadimcn.vscode-lldb",
+    "editorconfig.editorconfig"
+  ]
+}
