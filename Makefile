@@ -1,6 +1,6 @@
 all: setup debug
 
-OPTS = -Wall -Wextra -Werror -pedantic -lm
+OPTS = -g -Wall -Wextra -Werror -pedantic -lm
 
 setup:
 	mkdir -p dist

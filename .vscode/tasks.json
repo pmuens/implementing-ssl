@@ -4,7 +4,7 @@
     {
       "label": "build",
       "type": "shell",
-      "command": "mkdir -p dist && clang -g -Wall -lm -o dist/debug src/debug.c",
+      "command": "make",
       "group": {
         "kind": "build",
         "isDefault": true
