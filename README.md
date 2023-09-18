@@ -16,12 +16,11 @@ direnv allow
 
 ./run.sh <name>
 
+make [<name>]
+
 c99 -o <name> <name>.c -lm
-
 clang -Wall -lm -o <name> <name>.c
-
 gcc -std=c99 -Wall -lm -o -Wall -lm -o <name> <name>.c
-
 icc -std=c99 -Wall -lm -o -Wall -lm -o <name> <name>.c
 
 man printf
