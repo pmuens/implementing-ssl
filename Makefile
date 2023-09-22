@@ -1,4 +1,4 @@
-all: setup debug http webserver des aes
+all: setup debug http webserver des aes rc4
 
 OPTS = -g -Wall -Wextra -Werror -pedantic -lm \
 	-Wno-implicit-function-declaration \
@@ -24,6 +24,9 @@ des: ./src/des.c ./src/utils.c ./src/hex.c
 
 aes: ./src/aes.c ./src/utils.c ./src/hex.c
 	clang -DTEST_AES $(OPTS) -o ./dist/aes ./src/aes.c ./src/utils.c ./src/hex.c
+
+rc4: ./src/rc4.c ./src/hex.c
+	clang -DTEST_RC4 $(OPTS) -o ./dist/rc4 ./src/rc4.c ./src/hex.c
 
 clean:
 	rm -rf dist
